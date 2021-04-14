@@ -1,0 +1,20 @@
+﻿@page
+@model ContosoCrafts.WebSite.GetFromFileModel
+@{
+    ViewData["Title"] = "Pobrane z pliku";
+}
+
+
+<div class="text-center">
+    <h1 class="display-4">Pobrane z pliku</h1>
+</div>
+<div class="card-columns">
+    @foreach (var product in Model.Products)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@product.Title</h5>
+            </div>
+        </div>
+    }
+</div>
